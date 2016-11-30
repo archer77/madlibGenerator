@@ -1,5 +1,13 @@
 //madScripts.js
 //Author:Alexander Corley
+
+/**
+ * @brief   setup the input area for the user to enter words
+ */
+function setupInput() {
+  
+}
+
 /**
  * @brief   save a cookie
  * @source  http://www.w3schools.com/js/js_cookies.asp
