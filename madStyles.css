@@ -1,2 +1,42 @@
 /*madStyles.css*/
 /*Author:Alexander Corley*/
+/*General Styles*/
+body {
+  background-color:#cc9999;
+}
+div {
+  float:left;
+}
+.header {
+  text-align:center;
+  width:100%;
+}
+.nav {
+  width:25%;
+  min-width:100px;
+  max-width:250px;
+  background-color:#dddddd;
+  min-height:500px;
+  margin-left:0px;
+  border-style:outset;
+}
+.mainColumn {
+  width:59%;
+  min-height:500px;
+  margin:10px;
+}
+.footer {
+  height:50px;
+  margin:20px;
+  text-align:center;
+  width:100%;
+}
+
+/*Mad Lib Styles*/
+.altColumn {
+  width:33%;
+  min-height:500px;
+  margin:10px;
+  border-style:ridge;
+  background-color:#cccccc;
+}
