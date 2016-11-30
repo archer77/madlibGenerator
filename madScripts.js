@@ -1,12 +1,12 @@
 //madScripts.js
 //Author:Alexander Corley
 
-/**
- * @brief   setup the input area for the user to enter words
- */
-function setupInput() {
-  
-}
+$(document).ready(function(){
+  $(".nav > ul > ul > li").click(function(){
+    setCookie("madLib", this.innerHTML, .5);
+    window.location = "madLibs.html";
+  });
+});
 
 /**
  * @brief   save a cookie
