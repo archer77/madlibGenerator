@@ -11,6 +11,9 @@ div {
   text-align:center;
   width:100%;
 }
+.header > a > img {
+  width:20%;
+}
 .nav {
   width:25%;
   min-width:100px;
