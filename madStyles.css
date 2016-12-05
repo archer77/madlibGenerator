@@ -44,6 +44,9 @@ div {
   background-color:#cccccc;
   text-align:center;
 }
+.words {
+  font-weight:bold;
+}
 input.wordInput {
   margin:10px;
   margin-bottom:3px;
