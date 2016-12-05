@@ -42,4 +42,13 @@ div {
   margin:10px;
   border-style:ridge;
   background-color:#cccccc;
+  text-align:center;
+}
+input.wordInput {
+  margin:10px;
+  margin-bottom:3px;
+  
+}
+button.submitButton {
+  
 }
