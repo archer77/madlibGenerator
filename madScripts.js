@@ -8,14 +8,49 @@ $(document).ready(function(){
     setCookie("madLib", this.innerHTML, .5);
     window.location = "madLibs.html";
   });
-  if (window.location == "madLibs.html") {
-    story = madLibs[getCookie("madLib")];
-    var inputBox = $("#getWords");
+  var sPath = window.location.pathname;
+  var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+  if (sPage == "madLibs.html") {
+    var title = getCookie("madLib");
+    story = getMadLib(title);
+    var inputBox = document.getElementById("getWords");//$("#getWords");
     if (story == undefined) {
-      inputBox.innerHTML = "Whoa how did you get here without a story? Click a story on the side to load a new story";
+      var error = document.createTextNode("some error message");
+      inputBox.appendChild(error);
+    }
+    else {
+      fillInputBox(title, inputBox);
     }
   }
 });
+
+function fillInputBox(title, inputBox) {
+  var para;
+  var wordIn;
+  var textNode;
+  for (var index = 0; index < story.words.length; index++) {
+    para = document.createElement("p");
+    wordIn = document.createElement("input");
+    para.appendChild(document.createTextNode(story.words[index]));
+    wordIn.classList.add("wordInputs");
+    wordIn.setAttribute("placeholder", "Enter a word HERE");
+    para.appendChild(wordIn);
+    inputBox.appendChild(para);
+  }
+  var butt = document.createElement("button");
+  butt.appendChild(document.createTextNode("Mad-Lib"));
+  butt.classList.add("submitButton");
+  butt.click(fillMadLib());
+  inputBox.appendChild(butt);
+    
+}
+
+/**
+ * @brief   fill in the mad lib for the user and display it
+ */
+function fillMadLib() {
+  
+}
 
 /**
  * @brief   save a cookie

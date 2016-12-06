@@ -1,8 +1,17 @@
 //madLibsStore.js
 //Author:Alexander Corley
 
-var madLibs = {
-  "Pizza Parlor" : {
+function getMadLib(title) {
+  for (var index = 0; index < madLibs.length; index++) {
+    if (madLibs[index].title == title)
+      return madLibs[index];
+  }
+  return undefined;
+}
+
+var madLibs = [
+  {
+    title: "Pizza Parlor",
     
     words : [
       "Name",
@@ -18,8 +27,8 @@ var madLibs = {
     
     Story : "Come on over to <span class=\"words\"></span>`s Pizza Parlor where you can enjoy you favorite <span class=\"words\"></span>-dish pizza`s. You can try our famous <span class=\"words\"></span>-lovers pizza, or select from our list of <span class=\"words\"></span> toppings, including sauteed <span class=\"words\"></span>, <span class=\"words\"></span>, and many more. Our crusts are hand-<span class=\"words\"></span> and basted in <span class=\"words\"></span> to make them seem more <span class=\"words\"></span>-made."
   },
-  
-  "Letter From Camp" : {
+  {
+    title: "Letter From Home",
     
     words : [
       "Relative",
@@ -44,4 +53,4 @@ var madLibs = {
     Story : "Dear <span class=\"words\"></span>, I am having a(n) <span class=\"words\"></span> time at camp. The counselour is <span class=\"words\"></span> and the food is <span class=\"words\"></span>. I met <span class=\"words\"></span> and we became <span class=\"words\"></span> friends. Unfortunately, <span class=\"words\"></span> is <span class=\"words\"></span> and I <span class=\"words\"></span> my <span class=\"words\"></span> so we couldn\`t go <span class=\"words\"></span> like everybody else. I need more <span class=\"words\"></span> and a <span class=\"words\"></span> sharpener, so please <span class=\"words\"></span> <span class=\"words\"></span> more when you <span class=\"words\"></span> back. Your <span class=\"words\"></span>, <span class=\"words\"></span>"
   }
 
-}
+];
