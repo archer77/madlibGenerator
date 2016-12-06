@@ -44,14 +44,25 @@ div {
   background-color:#cccccc;
   text-align:center;
 }
+#getWords {
+  text-align:right;
+}
 .words {
   font-weight:bold;
 }
-input.wordInput {
+input.wordInputs {
   margin:10px;
   margin-bottom:3px;
-  
+  border-style:solid;
+  border-color:black;
+  height:20px;
+  width:60%;
 }
 button.submitButton {
-  
+  width:94%;
+  height:50px;
+  border-style:solid;
+  border-color:black;
+  background-color:lightgray;
+  margin:3%;
 }
