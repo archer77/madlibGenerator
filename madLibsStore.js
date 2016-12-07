@@ -55,7 +55,6 @@ var madLibs = [
   {
     title : "Dragons",
     
-    
     words : [
       "Color",
       "Superlative Ending in \"est\"",
@@ -70,6 +69,38 @@ var madLibs = [
     ],
     
     Story: "The [Word Not Submitted] Dragon is the [Word Not Submitted] Dragon of all. It has [Word Not Submitted] [Word Not Submitted], and a [Word Not Submitted] shaped like a [Word Not Submitted]. It loves to eat [Word Not Submitted], although it will feast on nearly anything. It is [Word Not Submitted] and [Word Not Submitted]. You must be [Word Not Submitted] around it, or you may end up as it`s meal!"
+  },
+  {
+    title : "Noah's Ark",
+    
+    words : [
+      "Noun",
+      "Verb",
+      "Adjective",
+      "Noun (Plural)",
+      "Vehicle",
+      "Noun",
+      "Number",
+      "Noun (Plural)",
+      "Noun (Plural)",
+      "Number",
+      "Adjective",
+      "Noun",
+      "Verb Ending in \"ed\"",
+      "Verb Ending in \"ed\"",
+      "Noun (Plural)",
+      "Measurement of Time (Plural)",
+      "Verb Ending in \"ed\"",
+      "Noun (Plural)",
+      "Noun (Plural)",
+      "Type of Liquid",
+      "Noun",
+      "Adjective",
+      "Verb",
+      "Noun"
+    ],
+    
+    Story : "There was [Word Not Submitted] in the world. So God told Noah that it was going to [Word Not Submitted] for a [Word Not Submitted] time. God gave Noah [Word Not Submitted] on what to do: \"Make a [Word Not Submitted]. It should be made out of gopher [Word Not Submitted] and should be [Word Not Submitted] [Word Not Submitted] long, and 75 [Word Not Submitted] wide. Take with you [Word Not Submitted] of every creature: One [Word Not Submitted], and one female.\" So Noah gathered his [Word Not Submitted] together, and they [Word Not Submitted] the ark. Noah`s friends [Word Not Submitted] out [Word Not Submitted] at him as he worked, but Noah didn`t pay attention to them. Finally after 120 [Word Not Submitted], the ark was [Word Not Submitted]. They then gathered all the creatures, and as the last one boarded, it began to [Word Not Submitted]. For 40 [Word Not Submitted] and 40 [Word Not Submitted], it went on. The Earth became covered with [Word Not Submitted]. After a year and a day, they found [Word Not Submitted], and everyone else was [Word Not Submitted]. And as a sign that God would never [Word Not Submitted] the earth again, he gave them a/an [Word Not Submitted]."
   }
 
 ];
