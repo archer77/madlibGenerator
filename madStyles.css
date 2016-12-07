@@ -14,7 +14,7 @@ div {
 .header > a > img {
   width:20%;
 }
-.nav {
+#nav {
   width:25%;
   min-width:100px;
   max-width:250px;
@@ -47,7 +47,7 @@ div {
 #getWords {
   text-align:right;
 }
-.words {
+.wordOutputs {
   font-weight:bold;
 }
 input.wordInputs {
@@ -56,7 +56,7 @@ input.wordInputs {
   border-style:solid;
   border-color:black;
   height:20px;
-  width:60%;
+  width:38%;
 }
 button.submitButton {
   width:94%;
