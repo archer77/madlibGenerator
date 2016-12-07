@@ -7,15 +7,13 @@ var story;
  * @brief   prepare the page for 
  */
 $(document).ready(function(){
-  $(".nav > ul > ul > li").click(function(){
-    setCookie("madLib", this.innerHTML, .5);
-    window.location = "madLibs.html";
-  });
+
   var sPath = window.location.pathname;
   var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
   if (sPage == "madLibs.html") {
     var title = getCookie("madLib");
     story = getMadLib(title);
+    fillNavBox();
     var inputBox = document.getElementById("getWords");
     if (story == undefined) {
       var error = document.createTextNode("some error message");
@@ -25,9 +23,36 @@ $(document).ready(function(){
     else {
       fillInputBox(title, inputBox);
     }
-  }
+  } else fillNavBox();
 });
 
+function fillNavBox() {
+  var nav = document.getElementById("nav");
+  var list1 = document.createElement("ul");
+  var listItem = document.createElement("li");
+  listItem.appendChild(document.createTextNode("Stories"));
+  list1.appendChild(listItem);
+  var list2 = document.createElement("ul");
+  for (var i = 0; i < madLibs.length; i++) {
+    listItem = document.createElement("li");
+    listItem.appendChild(document.createTextNode(madLibs[i].title));
+    if (story != undefined && story.title == madLibs[i].title) listItem.classList.add("active");
+    listItem.setAttribute("onclick", "setCookie(\"madLib\", this.innerHTML, .5);window.location = \"madLibs.html\";");
+    list2.appendChild(listItem);
+  }
+  list1.appendChild(list2);
+  listItem = document.createElement("li");
+  var linkk = document.createElement("a");
+  linkk.setAttribute("href", "index.html");
+  linkk.appendChild(document.createTextNode("Home"));
+  listItem.appendChild(linkk);
+  list1.appendChild(listItem);
+  nav.appendChild(list1);
+}
+
+/**
+ * @brief   generate the input boxes for the user to enter words into
+ */
 function fillInputBox(title, inputBox) {
   var para;
   var wordIn;
