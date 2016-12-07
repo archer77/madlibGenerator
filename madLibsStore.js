@@ -11,7 +11,7 @@ function getMadLib(title) {
 
 var madLibs = [
   {
-    title: "Pizza Parlor",
+    title : "Pizza Parlor",
     
     words : [
       "Name",
@@ -25,10 +25,10 @@ var madLibs = [
       "Noun"
     ],
     
-    Story : "Come on over to <span class=\"words\"></span>`s Pizza Parlor where you can enjoy you favorite <span class=\"words\"></span>-dish pizza`s. You can try our famous <span class=\"words\"></span>-lovers pizza, or select from our list of <span class=\"words\"></span> toppings, including sauteed <span class=\"words\"></span>, <span class=\"words\"></span>, and many more. Our crusts are hand-<span class=\"words\"></span> and basted in <span class=\"words\"></span> to make them seem more <span class=\"words\"></span>-made."
+    Story : "Come on over to [Word Not Submitted]`s Pizza Parlor where you can enjoy you favorite [Word Not Submitted]-dish pizza`s. You can try our famous [Word Not Submitted]-lovers pizza, or select from our list of [Word Not Submitted] toppings, including sauteed [Word Not Submitted], [Word Not Submitted], and many more. Our crusts are hand-[Word Not Submitted] and basted in [Word Not Submitted] to make them seem more [Word Not Submitted]-made."
   },
   {
-    title: "Letter From Home",
+    title : "Letter From Home",
     
     words : [
       "Relative",
@@ -50,7 +50,26 @@ var madLibs = [
       "Person in Room"
     ],
     
-    Story : "Dear <span class=\"words\"></span>, I am having a(n) <span class=\"words\"></span> time at camp. The counselour is <span class=\"words\"></span> and the food is <span class=\"words\"></span>. I met <span class=\"words\"></span> and we became <span class=\"words\"></span> friends. Unfortunately, <span class=\"words\"></span> is <span class=\"words\"></span> and I <span class=\"words\"></span> my <span class=\"words\"></span> so we couldn\`t go <span class=\"words\"></span> like everybody else. I need more <span class=\"words\"></span> and a <span class=\"words\"></span> sharpener, so please <span class=\"words\"></span> <span class=\"words\"></span> more when you <span class=\"words\"></span> back. Your <span class=\"words\"></span>, <span class=\"words\"></span>"
+    Story : "Dear [Word Not Submitted], I am having a(n) [Word Not Submitted] time at camp. The counselour is [Word Not Submitted] and the food is [Word Not Submitted]. I met [Word Not Submitted] and we became [Word Not Submitted] friends. Unfortunately, [Word Not Submitted] is [Word Not Submitted] and I [Word Not Submitted] my [Word Not Submitted] so we couldn\`t go [Word Not Submitted] like everybody else. I need more [Word Not Submitted] and a [Word Not Submitted] sharpener, so please [Word Not Submitted] [Word Not Submitted] more when you [Word Not Submitted] back. Your [Word Not Submitted], [Word Not Submitted]"
+  },
+  {
+    title : "Dragons",
+    
+    
+    words : [
+      "Color",
+      "Superlative Ending in \"est\"",
+      "Adjective",
+      "Body Part (Plural)",
+      "Pody Part",
+      "Noun",
+      "Animal (Plural)",
+      "Adjective",
+      "Adjective",
+      "Adjective"
+    ],
+    
+    Story: "The [Word Not Submitted] Dragon is the [Word Not Submitted] Dragon of all. It has [Word Not Submitted] [Word Not Submitted], and a [Word Not Submitted] shaped like a [Word Not Submitted]. It loves to eat [Word Not Submitted], although it will feast on nearly anything. It is [Word Not Submitted] and [Word Not Submitted]. You must be [Word Not Submitted] around it, or you may end up as it`s meal!"
   }
 
 ];
