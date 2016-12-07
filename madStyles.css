@@ -22,6 +22,7 @@ div {
   min-height:500px;
   margin-left:0px;
   border-style:outset;
+  border-color:black;
 }
 #nav > ul > ul > li {
   color:#555555;
