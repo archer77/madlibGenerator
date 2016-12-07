@@ -22,6 +22,7 @@ $(document).ready(function(){
     }
     else {
       fillInputBox(title, inputBox);
+      document.getElementById("title").innerHTML = story.title + " Mad Lib&#8482;";
     }
   } else fillNavBox();
 });
