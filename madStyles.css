@@ -23,6 +23,13 @@ div {
   margin-left:0px;
   border-style:outset;
 }
+#nav > ul > ul > li {
+  color:#555555;
+}
+#nav > ul > ul > li.active {
+  font-weight:bold;
+  color:black;
+}
 .mainColumn {
   width:59%;
   min-height:500px;
