@@ -9,6 +9,12 @@ function getMadLib(title) {
   return undefined;
 }
 
+function compareTo(o1, o2) {
+  if (o1.title > o2.title) return 1;
+  if (o1.title < o2.title) return -1;
+  return 0;
+}
+
 var madLibs = [
   {
     title : "Pizza Parlor",

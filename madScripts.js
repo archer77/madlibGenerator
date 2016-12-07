@@ -7,7 +7,6 @@ var story;
  * @brief   prepare the page for 
  */
 $(document).ready(function(){
-
   var sPath = window.location.pathname;
   var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
   if (sPage == "madLibs.html") {
@@ -40,6 +39,7 @@ function fillNavBox() {
   listItem.appendChild(document.createTextNode("Stories"));
   list1.appendChild(listItem);
   var list2 = document.createElement("ul");
+  madLibs.sort(compareTo);
   for (var i = 0; i < madLibs.length; i++) {
     listItem = document.createElement("li");
     listItem.appendChild(document.createTextNode(madLibs[i].title));
