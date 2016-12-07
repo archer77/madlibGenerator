@@ -3,6 +3,9 @@
 
 var story;
 
+/**
+ * @brief   prepare the page for 
+ */
 $(document).ready(function(){
   $(".nav > ul > ul > li").click(function(){
     setCookie("madLib", this.innerHTML, .5);
@@ -13,9 +16,10 @@ $(document).ready(function(){
   if (sPage == "madLibs.html") {
     var title = getCookie("madLib");
     story = getMadLib(title);
-    var inputBox = document.getElementById("getWords");//$("#getWords");
+    var inputBox = document.getElementById("getWords");
     if (story == undefined) {
       var error = document.createTextNode("some error message");
+      inputBox.setAttribute("style", "text-align:center;");
       inputBox.appendChild(error);
     }
     else {
@@ -40,7 +44,7 @@ function fillInputBox(title, inputBox) {
   var butt = document.createElement("button");
   butt.appendChild(document.createTextNode("Mad-Lib"));
   butt.classList.add("submitButton");
-  butt.click(fillMadLib());
+  butt.setAttribute("onclick", "fillMadLib();");
   inputBox.appendChild(butt);
     
 }
@@ -49,7 +53,29 @@ function fillInputBox(title, inputBox) {
  * @brief   fill in the mad lib for the user and display it
  */
 function fillMadLib() {
+  var storyArray = story.Story.split("[Word Not Submitted]");
+  var outputBox = document.getElementById("displayLib");
+  var spann;
+  var textt;
+  for (var i = 0; i < storyArray.length; i++) {
+    textt = document.createTextNode(storyArray[i]);
+    outputBox.appendChild(textt);
+    if (i == storyArray.length-1) {
+      break;
+    }
+    spann = document.createElement("span");
+    spann.classList.add("wordOutputs");
+    outputBox.appendChild(spann);
+  }
   
+  var storyText = document.createTextNode(story.Story);
+  var inputs = document.getElementsByClassName("wordInputs");
+  var outputs = document.getElementsByClassName("wordOutputs");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value.trim() != "")
+      outputs[i].innerHTML = inputs[i].value;
+    else outputs[i].innerHTML = "Word Not Submitted";
+  }
 }
 
 /**
