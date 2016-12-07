@@ -16,9 +16,15 @@ $(document).ready(function(){
     fillNavBox();
     var inputBox = document.getElementById("getWords");
     if (story == undefined) {
-      var error = document.createTextNode("some error message");
+      var error = document.createElement("p");
+      error.appendChild(document.createTextNode("Looks like you came here out of order... try clicking one of the stories on the side to fix this and move on."));
+      var errorImg = document.createElement("img");
+      errorImg.setAttribute("src", "error-512.png");
+      errorImg.setAttribute("alt", "a picture of something broken");
+      errorImg.setAttribute("style", "width:50%;")
       inputBox.setAttribute("style", "text-align:center;");
       inputBox.appendChild(error);
+      inputBox.appendChild(errorImg);
     }
     else {
       fillInputBox(title, inputBox);
