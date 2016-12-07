@@ -44,7 +44,8 @@ function fillNavBox() {
   list1.appendChild(list2);
   listItem = document.createElement("li");
   var linkk = document.createElement("a");
-  linkk.setAttribute("href", "index.html");
+  if (story != undefined) linkk.setAttribute("href", "index.html");
+  else linkk.setAttribute("href", "#");
   linkk.appendChild(document.createTextNode("Home"));
   listItem.appendChild(linkk);
   list1.appendChild(listItem);
