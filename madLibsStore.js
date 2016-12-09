@@ -1,6 +1,9 @@
 //madLibsStore.js
 //Author:Alexander Corley
 
+/**
+ * @brief   get a mad lib referenced by title
+ */
 function getMadLib(title) {
   for (var index = 0; index < madLibs.length; index++) {
     if (madLibs[index].title == title)
@@ -9,12 +12,21 @@ function getMadLib(title) {
   return undefined;
 }
 
+/**
+ * @brief   compare one story to the next, used to sort the nav bar
+ * i could have just put the stories in alphabetical order in the first place
+ * but this allows me to just append them
+ */
 function compareTo(o1, o2) {
   if (o1.title > o2.title) return 1;
   if (o1.title < o2.title) return -1;
   return 0;
 }
 
+//array of story objects
+//could convert this to object notation now that i know it
+//rather than declaring the objects as I go.
+//could also store this in a .JSON file but i dont know how to yet
 var madLibs = [
   {
     title : "Pizza Parlor",

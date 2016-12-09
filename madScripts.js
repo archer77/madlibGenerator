@@ -4,7 +4,7 @@
 var story;
 
 /**
- * @brief   prepare the page for 
+ * @brief   prepare the page
  */
 $(document).ready(function(){
   var sPath = window.location.pathname;
@@ -16,7 +16,8 @@ $(document).ready(function(){
     var inputBox = document.getElementById("getWords");
     if (story == undefined) {
       var error = document.createElement("p");
-      error.appendChild(document.createTextNode("Looks like you came here out of order... try clicking one of the stories on the side to fix this and move on."));
+      error.appendChild(document.createTextNode("Looks like you came here out of order... "
+        + "try clicking one of the stories on the side to fix this and move on."));
       var errorImg = document.createElement("img");
       errorImg.setAttribute("src", "error-512.png");
       errorImg.setAttribute("alt", "a picture of something broken");
@@ -32,6 +33,9 @@ $(document).ready(function(){
   } else fillNavBox();
 });
 
+/**
+ * @brief   fills in the navigation box automatically with the stories that the user can choose
+ */
 function fillNavBox() {
   var nav = document.getElementById("nav");
   var list1 = document.createElement("ul");
