@@ -45,6 +45,7 @@ function fillNavBox() {
   var list2 = document.createElement("ul");
   madLibs.sort(compareTo);
   for (var i = 0; i < madLibs.length; i++) {
+    //add story titles to nav bar
     listItem = document.createElement("li");
     listItem.appendChild(document.createTextNode(madLibs[i].title));
     if (story != undefined && story.title == madLibs[i].title) listItem.classList.add("active");
@@ -70,6 +71,7 @@ function fillInputBox(title, inputBox) {
   var wordIn;
   var textNode;
   for (var index = 0; index < story.words.length; index++) {
+    //create word inputs
     para = document.createElement("p");
     wordIn = document.createElement("input");
     para.appendChild(document.createTextNode(story.words[index]));
@@ -78,6 +80,7 @@ function fillInputBox(title, inputBox) {
     para.appendChild(wordIn);
     inputBox.appendChild(para);
   }
+  //create submit button
   var butt = document.createElement("button");
   butt.appendChild(document.createTextNode("Mad-Lib!!!"));
   butt.classList.add("submitButton");
