@@ -79,9 +79,9 @@ function fillInputBox(title, inputBox) {
     inputBox.appendChild(para);
   }
   var butt = document.createElement("button");
-  butt.appendChild(document.createTextNode("Mad-Lib"));
+  butt.appendChild(document.createTextNode("Mad-Lib!!!"));
   butt.classList.add("submitButton");
-  butt.setAttribute("onclick", "fillMadLib();");
+  butt.setAttribute("onclick", "fillMadLib(); document.getElementById(\"getWords\").appendChild(document.createTextNode(\"Story MadLib'ed\"));");
   inputBox.appendChild(butt);
     
 }
