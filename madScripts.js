@@ -55,7 +55,9 @@ function fillNavBox() {
   list1.appendChild(list2);
   listItem = document.createElement("li");
   var linkk = document.createElement("a");
-  if (story != undefined) linkk.setAttribute("href", "index.html");
+  var sPath = window.location.pathname;
+  var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+  if (sPage == "madLibs.html") linkk.setAttribute("href", "index.html");
   else linkk.setAttribute("href", "#");
   linkk.appendChild(document.createTextNode("Home"));
   listItem.appendChild(linkk);
